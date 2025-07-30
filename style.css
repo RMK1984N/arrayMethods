@@ -91,3 +91,48 @@ h1 {
   border: 1px solid #ccc;
   resize: none;
 }
+
+@media (max-width: 768px) {
+  .btn-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .input-card input,
+  .input-card button,
+  .output-card textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .btn-grid button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .input-card button {
+    margin-top: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
